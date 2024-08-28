@@ -38,3 +38,10 @@ def splitData(rawDataPath) -> None:
             copy(source_path, target_path)
 
     print("Image data split into train and test sets.") 
+    
+def random_image(dirPath) -> str:
+    
+    # Get all image file paths, randomly select and return complete path of image file
+    imageFiles = [imagePath for imagePath in os.listdir(dirPath) if imagePath.endswith('.jpg')]
+    randomImage = random.choice(imageFiles)
+    return os.path.join(dirPath, randomImage)
