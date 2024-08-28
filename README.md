@@ -1,4 +1,4 @@
-# car-make-classification
+# Car make classification
 Classification of car make images
 
 This project performs the following:
