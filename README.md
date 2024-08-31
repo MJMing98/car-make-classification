@@ -10,9 +10,9 @@ This project performs the following:
 
 ## Note:
 Run this command to download cuda compatible pytorch:
-'''
+~~~
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-'''
+~~~
 
 ## How to run the training script
 1. git clone the repo
