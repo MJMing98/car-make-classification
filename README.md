@@ -31,7 +31,9 @@ uvicorn main:imgPredictionApp --reload
 | ---------- | ---------- |
 | Content-type (Headers) | multipart/form-data |
 | imgFile | < Insert path to file here in value column > |
+
 The outputted result should look something like this:
+
 ![results sample](https://github.com/user-attachments/assets/098b75d3-c1f5-474b-a226-eab94e388201)
 
 
