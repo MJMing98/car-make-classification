@@ -36,4 +36,17 @@ The outputted result should look something like this:
 
 ![results sample](https://github.com/user-attachments/assets/098b75d3-c1f5-474b-a226-eab94e388201)
 
+## How to build the dockerfile
+1. At the main directory, run the following command to create the image (imgfile name can be changed to something else, depending on user):
+~~~
+docker build -t <insert image name> .
+~~~
+2. Once build is complete, we can then start the container by running the image file by doing:
+~~~
+docker run -dp 127.0.0.1:8000:8000 <insert image name>
+~~~
+3. Go back to postman and rerun the request without uvicorn running in the background, and the response should be returned
+
+
+
 
