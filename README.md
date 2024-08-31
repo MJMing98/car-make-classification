@@ -18,3 +18,20 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 1. git clone the repo
 2. Go to the initScripts folder and run the trainingScript.ipynb file
 3. After all cells have been ran, model should be exported into tensorrt format in the ./runs/classify/trainX/weights folder, under the name best.engine
+
+## Deployment of the model itself
+1. After training script has been ran, change the main.py file's model variable value to the path for the procured tensorrt engine file (file format should be in *.engine)
+2. Run the following command on the terminal:
+~~~
+uvicorn main:imgPredictionApp --reload
+~~~
+3. Open postman, create a **POST** request for endpoint http://localhost:8000/predict and add the below settings:
+
+| Properties | Values |
+| ---------- | ---------- |
+| Content-type (Headers) | multipart/form-data |
+| imgFile | < Insert path to file here in value column > |
+The outputted result should look something like this:
+![results sample](https://github.com/user-attachments/assets/098b75d3-c1f5-474b-a226-eab94e388201)
+
+
