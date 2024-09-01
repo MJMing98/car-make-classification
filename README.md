@@ -35,10 +35,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ## Results of procured images
 Below is an example image showing the inference after an image has been classified:
-![results sample](https://github.com/user-attachments/assets/098b75d3-c1f5-474b-a226-eab94e388201)
+![results sample](https://github.com/user-attachments/assets/098b75d3-c1f5-474b-a226-eab94e388201)  
 Here are some displayed images obtained from the trainingScript.ipynb file:
 ![sample axia](https://github.com/user-attachments/assets/bfab8335-58c2-43b7-a0e8-60612d1eb281)
-**Caption:** Perodua Axia example image with confidence score displayed on top left
+**Caption:** Perodua Axia example image with confidence score displayed on top left  
 ![sample vios](https://github.com/user-attachments/assets/1c861b3a-ad68-4e81-b77c-903dcf464238)
 **Caption:** Toyota Vios example image with confidence score displayed on top left
 
