@@ -1,0 +1,13 @@
+path: C:\Users\stryk\Desktop\car make classification\car-make-classification\data_split
+train: C:\Users\stryk\Desktop\car make classification\car-make-classification\data_split\train  # Name of the training folder
+val: C:\Users\stryk\Desktop\car make classification\car-make-classification\data_split\test  # Name of the validation folder
+
+# train: train/images  
+# val: val/images  # Make sure to validate on different data if possible
+
+# # Directories
+# train_label_dir: train/labels
+# val_label_dir: train/labels
+
+nc: 3  # Number of classes (adjust as needed)
+names: ['perodua_axis', 'perodua_myvi', 'toyota_vios']
